@@ -23,6 +23,8 @@ import EYE from './asset/BEFAST/Assesment/EYE.jsx'
 import TimeMap from './asset/BEFAST/Assesment/TimeMap.js'
 import PatientDetail from './component/PatientDetail.jsx'
 import {VoiceTrigger} from './component/TestVoiceSpeech.js'
+import Brain from './component/Brain.jsx'
+
 
 import Hospital from './asset/BEFAST/Assesment/Hospital.jsx';
 import SearchByIdCardAngel from './component/SearchPatientAngel.jsx';
@@ -52,17 +54,13 @@ function App() {
  const { i18n } = useTranslation();
 
       useEffect(() => {
-    // Clear user data on app load
     localStorage.removeItem('patientName');
     localStorage.removeItem('patientId');
-    // Add more items if needed
   }, []);
 
   useEffect(() => {
-    // Set <html lang="en/th">
     document.documentElement.lang = i18n.language;
 
-    // Set font on <body> based on language
     const font = i18n.language === 'th' ? 'Prompt' : 'Poppins';
     document.body.style.fontFamily = `'${font}', sans-serif`;
   }, [i18n.language]);
@@ -207,6 +205,11 @@ function App() {
                         path="/room/:roomID"
                         element={<RoomPage/>}
                     />
+        <Route
+                        path="/Brain"
+                        element={<Brain/>}
+                    />
+
       </Routes>
     </Router>
   );

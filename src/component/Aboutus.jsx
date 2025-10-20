@@ -13,63 +13,75 @@ import Din from "./pic/maDin.jpg"
 import Jing from "./pic/nongjing.jpg"
 import Kaopan from "./pic/kuyPan.png"
 import Fandawn from "./pic/fandawn.png"
+import Krunew from "./pic/krunew.png"
 
 import IG from "./pic/Instagram_logo.png"
-const TEAM = [
-  {
-    name: "ภูดิส วังธิยอง",
-    role: "Founder & Backend Developer",
-    bio: "",
-    photo: Meephoo,
-    links: { linkedin: "#", IG: "https://www.instagram.com/moophee_/" }
-  },
-  {
-    name: "ปัณณวัฒน์ เลิศมัลลิกาพร",
-    role: "Founder & Frontend Developer & Sleeper" ,
-    bio: "",
-    photo: Kaopan,
-    links: { linkedin: "#", IG: "https://www.instagram.com/iluavsamoyed/" }
-  },
-  {
-    name: "ชญาฐิตา พิศุทธิโชติ",
-    role: "Founder & Frontend Developer",
-    bio: "",
-    photo: Jing,
-    links: { linkedin: "#", IG: "https://www.instagram.com/ghmaonf/" }
-  },
-  {
-    name: "พสุธันส์ ศิริพรเลิศ",
-    role: "Founder & Hardware Engineer",
-    bio: "",
-    photo: Din,
-    links: { linkedin: "#", IG: "https://www.instagram.com/natthaphat_bigbelly/" }
-  },
-  {
-    name: "ณัฏฐพัชร์ สิริสว่างเมฆ",
-    role: "Founder Developer",
-    bio: "",
-    photo: Gundam,
-    links: { linkedin: "#", IG: "https://www.instagram.com/natthaphat_bigbelly/" }
-  },
-  {
-    name: "ทิชากร โรจ",
-    role: "Finance Person & Fannongdawn",
-    bio: "",
-    photo: Fandawn,
-    links: { linkedin: "#", IG: "https://www.instagram.com/p/DPIlU8jEYI4/" }
-  },
 
-];
+
+
+
 
 export default function TeamScroller() {
   const containerRef = useRef(null);
   const cardRefs = useRef([]);
   const [active, setActive] = useState(0);
-const { t } = useTranslation();
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const assessment = ["NIHSS", "Assessment"];
+  
+  const TEAM = [
+    {
+      name: t("fullname1"),
+      role: "Founder & Backend Developer",
+      bio: "",
+      photo: Meephoo,
+      links: { linkedin: "#", IG: "https://www.instagram.com/moophee_/" }
+    },
+    {
+      name: t("fullname2"),
+      role: "Founder & Frontend Developer & Sleeper" ,
+      bio: "",
+      photo: Kaopan,
+      links: { linkedin: "#", IG: "https://www.instagram.com/iluavsamoyed/" }
+    },
+    {
+      name: t("fullname3"),
+      role: "Founder & Frontend Developer",
+      bio: "",
+      photo: Jing,
+      links: { linkedin: "#", IG: "https://www.instagram.com/ghmaonf/" }
+    },
+    {
+      name: t("fullname4"),
+      role: "Founder & Hardware Engineer",
+      bio: "",
+      photo: Din,
+      links: { linkedin: "#", IG: "https://www.instagram.com/natthaphat_bigbelly/" }
+    },
+    {
+      name: t("fullname5"),
+      role: "Founder Developer",
+      bio: "",
+      photo: Gundam,
+      links: { linkedin: "#", IG: "https://www.instagram.com/natthaphat_bigbelly/" }
+    },
+    {
+      name: t("fullname6"),
+      role: "Finance Person & Fannongdawn",
+      bio: "",
+      photo: Fandawn,
+      links: { linkedin: "#", IG: "https://www.instagram.com/p/DPIlU8jEYI4/" }
+    },
+    {
+      name: t("fullname7"),
+      role: "Super Consult",
+      bio: "",
+      photo: Krunew,
+      links: { linkedin: "#", IG: "https://www.instagram.com/krittipong_new/" }
+    },
+  ];
 
   const assessmentbtn = [
     { label: "NIHSS", path: "/About" },
@@ -169,7 +181,7 @@ const { t } = useTranslation();
                     {m.links.IG && (
                     <a href={m.links.IG} target="_blank" rel="noreferrer">
                       <img src={IG} className="picoflogo"></img>
-                        Instagram
+                      Instagram
                     </a>
                     )}
                 </div>

@@ -137,6 +137,14 @@
   "staystillphoto" : "Face detected! Please stay still…",
   "instructionforface1" : "1. Please position your face inside the rectangle frame.",
   "instructionforface2" : "2. Stay still. The system will capture the photo automatically.",
-  "result" : "Showing results…"
+  "result" : "Showing results…",
+  "fullname1" : "Pudis Vangtivong",
+  "fullname2" : "Pannawat Leartmullikaporn",
+  "fullname3" : "Chayatita Supatanapong",
+  "fullname4" : "Phasuthan Siriphonlerd",
+  "fullname5" : "Natthaphat Sirisawangmek",
+  "fullname6" : "Tichakorn roj",
+  "fullname7" : "Kritiphong Wachirangkul"
+
 
 }

@@ -9,12 +9,23 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitch from "./LanguageSwitch";
 
 /* videos — import each explicitly (or use public/ paths consistently) */
-import personal from "./videos/personal.mp4";
-/*import balanceVid from "./videos/balance.mp4";
-import eyeVid from "./videos/vision.mp4";
-import faceVid from "./videos/face.mp4";
-import armVid from "./videos/muscle.mp4";
-import speechVid from "./videos/speech.mp4";*/
+import personalth from "./videos/personalth.mp4";
+import personalen from "./videos/personalen.mp4";
+
+/*import balanceVidth from "./videos/balanceth.mp4";
+import balanceViden from "./videos/balanceen.mp4";
+
+import eyeVidth from "./videos/visionth.mp4";
+import eyeViden from "./videos/visionen.mp4";
+
+import faceVidth from "./videos/faceth.mp4";
+import faceViden from "./videos/faceen.mp4";
+
+import armVidth from "./videos/muscleth.mp4";
+import armViden from "./videos/muscleen.mp4";
+
+import speechVidth from "./videos/speechth.mp4";
+import speechViden from "./videos/speechen.mp4";*/
 
 /* pictures */
 import balancepic from "./pic/balancesmall.png";
@@ -24,7 +35,7 @@ import armpic from "./pic/armsmall.png";
 import speechpic from "./pic/speechsmall.png";
 
 export function Training() {
-  const { t } = useTranslation();
+  const { t,i18n } = useTranslation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -70,16 +81,28 @@ export function Training() {
   };
 
   // 5) videos by ID---------------------------------------------------------- edit
-  const VIDEOS = {
-    detail: personal,
-    balance: personal,
-    eye: personal,
-    face: personal,
-    arm: personal,
-    speech: personal,
-  };
-
+const VIDEOS = {
+  th: {
+    detail: personalth,
+    balance: personalth,
+    eye: personalth,
+    face: personalth,
+    arm: personalth,
+    speech: personalth,
+  },
+  en: {
+    detail: personalen,
+    balance: personalth,
+    eye: personalth,
+    face: personalth,
+    arm: personalth,
+    speech: personalth,
+  }
+};
   const [activeId, setActiveId] = useState(IDS[0]); // 'detail'
+  const currentLang = i18n.language; // 'th' หรือ 'en'
+  const currentVideo = VIDEOS[currentLang]?.[activeId] || VIDEOS['en']?.[activeId];
+  
 
   return (
     <div>
@@ -173,12 +196,13 @@ export function Training() {
             </div>
           </div>
 
-          {VIDEOS[activeId] && (
+          {currentVideo && (
             <video
+              key={`${currentLang}-${activeId}`} // เพิ่ม key เพื่อให้ video reload เมื่อเปลี่ยนภาษา
               controls
               className="vido"
             >
-              <source src={VIDEOS[activeId]} type="video/mp4" />
+              <source src={currentVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           )}

@@ -149,7 +149,7 @@ export function Inform() {
               style={{
                 backgroundColor: "#616edf",
                 color: "#fff",
-                fontSize: "1vw",
+                fontSize: "0.8vw",
                 padding: "0.6vw 1.5vw",
                 whiteSpace: "nowrap",
               }}

@@ -195,7 +195,7 @@ export function Inform() {
           <div className="infor2-banner2">{t("follow")}</div>
           <div className="infor3-banner2">{t("danger")}</div>
           <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
-            <div class="fw-semibold text-white fs-5 Start-text-enter">{t("enter")}</div>
+            <div className="Start-text-enter">{t("enter")}</div>
           </div>
         </div>
       </div>

@@ -124,7 +124,7 @@ export function Inform() {
                 className="infor1-firstpic fw-semibold"
                 style={{
                   fontSize: "clamp(1rem, 1.3vw, 1.5rem)",
-                  marginBottom: "0.5vw",
+                  marginBottom: "0.5rem",
                   color: "#fff",
                 }}
               >
@@ -149,8 +149,8 @@ export function Inform() {
               style={{
                 backgroundColor: "#616edf",
                 color: "#fff",
-                fontSize: "1vw",
-                padding: "0.6vw 1.5vw",
+                fontSize: "1rem",
+                padding: "0.6vw 1.5rem",
                 whiteSpace: "nowrap",
               }}
               onClick={() => navigate("/PatientDetail")}
@@ -195,7 +195,7 @@ export function Inform() {
           <div className="infor2-banner2">{t("follow")}</div>
           <div className="infor3-banner2">{t("danger")}</div>
           <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
-            <div class="fw-semibold text-white fs-5 Start-text-enter">{t("enter")}</div>
+            <div className="Start-text-enter">{t("enter")}</div>
           </div>
         </div>
       </div>

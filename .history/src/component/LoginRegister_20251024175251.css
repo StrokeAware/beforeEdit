@@ -509,19 +509,11 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   color: white;
 }
-
-/* เพิ่ม overlay เบา ๆ เพื่อให้อ่านง่ายขึ้น */
-.banner1-1::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
 
 .banner2 {
   display: block;
@@ -554,7 +546,13 @@
   margin-right: 2vw;
   margin-top: 5vw;
 }
-
+.bannerforcon{
+  display: flex;
+  width: clamp(20rem ,100%,100rem);
+  margin-left: auto;
+  flex-direction: column;
+    margin-right: 10vw; /* ปรับตรงนี้ให้ตรงกับปุ่ม */
+}
 
 .banner-con1 {
   position: absolute;
@@ -564,6 +562,19 @@
   width: clamp(20rem, 40vw, 50vw);
   height: clamp(10rem, 20vw, 50vw);          
   justify-content: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(60px, 5vw, 80px);
+  z-index: 1;
+  padding: 0 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-spacer {
@@ -800,17 +811,23 @@
   align-items: center;        
   justify-content: flex-end;  
   width: 100%;
+  color: #ffffff;
+  font-size: clamp(0.55rem, 1.7vw, 10rem) !important;
+  font-weight: 500;
   white-space: nowrap;  
   position: relative;         
   z-index: 1;
 }
-
 
 .infor3-firstpic {
   display: inline-flex;      
   align-items: center;        
   justify-content: flex-end;  
   margin-top: -5vw;
+  width: 100%;
+  color: #ffffff;
+  font-size: clamp(0.35rem, 1.1vw, 8rem) !important; 
+  font-weight: 500;
   white-space: nowrap;  
   position: relative;         
   z-index: 1;
@@ -867,10 +884,24 @@
 }
 
 
+
+
 /* --- Start Button --- */
 .Start1 {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-self: center;
   justify-content: center;
+  width: clamp(0.2rem, 8vw, 20rem);
+  height: clamp(0.2rem, 4vw, 20rem);
+  margin-top: 1.5vw;
 }
 .Start-text-enter {
   color: white;

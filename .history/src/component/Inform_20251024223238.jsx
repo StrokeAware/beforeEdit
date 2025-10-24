@@ -194,12 +194,12 @@ export function Inform() {
           <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
             <button 
               type="button"
-              class="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
+              class="btn d-flex justify-content-center justify-self-center rounded-pill border-0 fw-bold mt-3 shadow"
               style={{
               backgroundColor: "#616edf",
               color: "#fff",
               fontSize: "1.5vw",
-              padding: "0.8vw 1.5vw",
+              padding: "0.8vw 1.2vw",
             }}
             >
               {t("enter")}

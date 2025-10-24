@@ -199,7 +199,10 @@ export function Inform() {
               backgroundColor: "#616edf",
               color: "#fff",
               fontSize: "1.5vw",
-              padding: "0.8vw 1.5vw",
+              padding: "0.8vw 1.5git add .
+git commit -m "update version"
+git push origin main
+vw",
             }}
             >
               {t("enter")}

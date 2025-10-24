@@ -108,23 +108,31 @@ export function Inform() {
       <div className="navbar-spacer"></div>
 
       {/* BANNER */}
-       <div className="banner1-1">
+      <div className="banner1-1">
         <div
-          className="banner-content d-flex flex-column align-items-end justify-content-center text-end"
+          className="banner-content d-flex flex-column align-items-end justify-content-center text-end align-self-end"
           style={{
-            width: "fit-content",              
-            padding : "0 2vw",    
+            width: "fit-content",
             height: "100%",
             color: "white",
+            zIndex: 1,
           }}
         >
-          {/* กล่องข้อความ */}
-          <div style={{ lineHeight: 1.4 }}>
+          {/* กล่องข้อความมีพื้นหลังฟ้า */}
+          <div
+            className="bannerforcon text-white fw-semibold"
+            style={{
+              backgroundColor: "rgba(18, 77, 133, 0.9)", // สีน้ำเงินทึบแบบแถบในรูป
+              lineHeight: 1.4,
+              padding: "0.8rem 1rem",
+            }}
+          >
             <div
-              className="infor1-firstpic fw-semibold "
+              className="infor1-firstpic"
               style={{
-                fontSize: "1.6vw",
-                color: "#fff",
+                fontSize: "1.5vw",
+                fontWeight: 600,
+                whiteSpace: "nowrap",
               }}
             >
               แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
@@ -133,23 +141,23 @@ export function Inform() {
             <div
               className="infor3-firstpic"
               style={{
-                fontSize: "1.2vw",
-                color: "rgba(255,255,255,0.8)",
+                fontSize: "1.3vw",
+                color: "rgba(255,255,255,0.9)",
+                whiteSpace: "nowrap",
               }}
             >
               StrokeSight: Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score
             </div>
           </div>
 
-          {/* ปุ่มอยู่ข้างล่าง */}
+          {/* ปุ่ม CTA */}
           <button
             type="button"
-            className="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
+            className="btn rounded-pill border-0 fw-bold shadow mt-3 px-4 py-3"
             style={{
               backgroundColor: "#616edf",
               color: "#fff",
-              fontSize: "1.5vw",
-              padding: "0.8vw 1.7vw",
+              fontSize: "1.2vw",
               whiteSpace: "nowrap",
             }}
             onClick={() => navigate("/PatientDetail")}
@@ -192,18 +200,7 @@ export function Inform() {
           <div className="infor2-banner2">{t("follow")}</div>
           <div className="infor3-banner2">{t("danger")}</div>
           <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
-            <button 
-              type="button"
-              class="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
-              style={{
-              backgroundColor: "#616edf",
-              color: "#fff",
-              fontSize: "1.5vw",
-              padding: "0.8vw 1.5vw",
-            }}
-            >
-              {t("enter")}
-            </button>
+            <div class="fw-semibold text-white fs-5 Start-text-enter">{t("enter")}</div>
           </div>
         </div>
       </div>

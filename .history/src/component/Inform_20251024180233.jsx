@@ -112,19 +112,21 @@ export function Inform() {
         <div
           className="banner-content d-flex flex-column align-items-end justify-content-center text-end"
           style={{
-            width: "fit-content",              
-            padding : "0 2vw",    
+            width: "fit-content",        // ให้กล่องกว้างเท่าที่ข้อความใช้
+            marginLeft: "auto",          // 👈 ดันทั้งก้อนชิดขวา
+            marginRight: "10vw",         // 👈 ระยะห่างจากขอบขวา (ปรับเองได้)
             height: "100%",
             color: "white",
           }}
         >
           {/* กล่องข้อความ */}
-          <div style={{ lineHeight: 1.4 }}>
+          <div className="bannerforcon" style={{ lineHeight: 1.4 }}>
             <div
-              className="infor1-firstpic fw-semibold "
+              className="infor1-firstpic fw-semibold"
               style={{
-                fontSize: "1.6vw",
+                fontSize: "1vw",
                 color: "#fff",
+                
               }}
             >
               แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
@@ -133,7 +135,7 @@ export function Inform() {
             <div
               className="infor3-firstpic"
               style={{
-                fontSize: "1.2vw",
+                fontSize: "0.8vw",
                 color: "rgba(255,255,255,0.8)",
               }}
             >
@@ -158,6 +160,9 @@ export function Inform() {
           </button>
         </div>
       </div>
+
+
+
 
       <div style={{ width: "100%", height: "0.5vw", background: "#616edf" }}></div>
 
@@ -192,18 +197,7 @@ export function Inform() {
           <div className="infor2-banner2">{t("follow")}</div>
           <div className="infor3-banner2">{t("danger")}</div>
           <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
-            <button 
-              type="button"
-              class="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
-              style={{
-              backgroundColor: "#616edf",
-              color: "#fff",
-              fontSize: "1.5vw",
-              padding: "0.8vw 1.5vw",
-            }}
-            >
-              {t("enter")}
-            </button>
+            <div class="fw-semibold text-white fs-5 Start-text-enter">{t("enter")}</div>
           </div>
         </div>
       </div>

@@ -108,24 +108,20 @@ export function Inform() {
       <div className="navbar-spacer"></div>
 
       {/* BANNER */}
-       <div className="banner1-1">
+      <div className="banner1-1">
         <div
-          className="banner-content d-flex flex-column align-items-end justify-content-center text-end"
+          className="banner-content d-flex flex-column align-items-end justify-content-center text-end align-self-end"
           style={{
-            width: "fit-content",              
-            padding : "0 2vw",    
+            width: "fit-content",               
             height: "100%",
             color: "white",
+            zIndex : "1"
           }}
         >
           {/* กล่องข้อความ */}
-          <div style={{ lineHeight: 1.4 }}>
+          <div className="bannerforcon" >
             <div
-              className="infor1-firstpic fw-semibold "
-              style={{
-                fontSize: "1.6vw",
-                color: "#fff",
-              }}
+              class="infor1-firstpic  "
             >
               แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
             </div>
@@ -133,7 +129,7 @@ export function Inform() {
             <div
               className="infor3-firstpic"
               style={{
-                fontSize: "1.2vw",
+                fontSize: "1.3vw",
                 color: "rgba(255,255,255,0.8)",
               }}
             >
@@ -158,7 +154,6 @@ export function Inform() {
           </button>
         </div>
       </div>
-
       <div style={{ width: "100%", height: "0.5vw", background: "#616edf" }}></div>
 
       <div className="banner2">
@@ -192,18 +187,7 @@ export function Inform() {
           <div className="infor2-banner2">{t("follow")}</div>
           <div className="infor3-banner2">{t("danger")}</div>
           <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
-            <button 
-              type="button"
-              class="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
-              style={{
-              backgroundColor: "#616edf",
-              color: "#fff",
-              fontSize: "1.5vw",
-              padding: "0.8vw 1.5vw",
-            }}
-            >
-              {t("enter")}
-            </button>
+            <div class="fw-semibold text-white fs-5 Start-text-enter">{t("enter")}</div>
           </div>
         </div>
       </div>

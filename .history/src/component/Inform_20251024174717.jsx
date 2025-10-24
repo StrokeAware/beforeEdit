@@ -108,56 +108,59 @@ export function Inform() {
       <div className="navbar-spacer"></div>
 
       {/* BANNER */}
-       <div className="banner1-1">
-        <div
-          className="banner-content d-flex flex-column align-items-end justify-content-center text-end"
-          style={{
-            width: "fit-content",              
-            padding : "0 2vw",    
-            height: "100%",
-            color: "white",
-          }}
-        >
-          {/* กล่องข้อความ */}
-          <div style={{ lineHeight: 1.4 }}>
-            <div
-              className="infor1-firstpic fw-semibold "
-              style={{
-                fontSize: "1.6vw",
-                color: "#fff",
-              }}
-            >
-              แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
-            </div>
-
-            <div
-              className="infor3-firstpic"
-              style={{
-                fontSize: "1.2vw",
-                color: "rgba(255,255,255,0.8)",
-              }}
-            >
-              StrokeSight: Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score
-            </div>
-          </div>
-
-          {/* ปุ่มอยู่ข้างล่าง */}
-          <button
-            type="button"
-            className="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
+        <div className="banner1-1">
+          <div
+            className="banner-content d-flex flex-column align-items-center justify-content-center text-center"
             style={{
-              backgroundColor: "#616edf",
-              color: "#fff",
-              fontSize: "1.5vw",
-              padding: "0.8vw 1.7vw",
-              whiteSpace: "nowrap",
+              width: "100%",
+              height: "100%",
+              color: "white",
+              padding: "0 2rem",
             }}
-            onClick={() => navigate("/PatientDetail")}
           >
-            {t("start")}
-          </button>
+            {/* กล่องข้อความ */}
+            <div className="bannerforcon" style={{ lineHeight: 1.4 }}>
+              <div
+                className="infor1-firstpic fw-semibold"
+                style={{
+                  fontSize: "1vw",
+                  marginBottom: "0.5vw",
+                  color: "#fff",
+                }}
+              >
+                แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
+              </div>
+
+              <div
+                className="infor3-firstpic"
+                style={{
+                  fontSize: "0.8vw",
+                  color: "rgba(255,255,255,0.8)",
+                }}
+              >
+                StrokeSight: Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score
+              </div>
+            </div>
+
+            {/* ปุ่มอยู่ข้างล่าง */}
+            <button
+              type="button"
+              className="btn d-flex justify-content-center align-self-end rounded-pill border-0 fw-bold mt-3 shadow"
+              style={{
+                backgroundColor: "#616edf",
+                color: "#fff",
+                fontSize: "1vw",
+                padding: "0.6vw 1.5vw",
+                whiteSpace: "nowrap",
+              }}
+              onClick={() => navigate("/PatientDetail")}
+            >
+              {t("start")}
+            </button>
+          </div>
         </div>
-      </div>
+
+
 
       <div style={{ width: "100%", height: "0.5vw", background: "#616edf" }}></div>
 
@@ -192,18 +195,7 @@ export function Inform() {
           <div className="infor2-banner2">{t("follow")}</div>
           <div className="infor3-banner2">{t("danger")}</div>
           <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
-            <button 
-              type="button"
-              class="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
-              style={{
-              backgroundColor: "#616edf",
-              color: "#fff",
-              fontSize: "1.5vw",
-              padding: "0.8vw 1.5vw",
-            }}
-            >
-              {t("enter")}
-            </button>
+            <div class="fw-semibold text-white fs-5 Start-text-enter">{t("enter")}</div>
           </div>
         </div>
       </div>

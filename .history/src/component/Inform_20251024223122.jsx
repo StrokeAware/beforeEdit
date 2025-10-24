@@ -191,15 +191,14 @@ export function Inform() {
           <div className="infor1-banner2">DASHBOARD</div>
           <div className="infor2-banner2">{t("follow")}</div>
           <div className="infor3-banner2">{t("danger")}</div>
-          <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
+          <div  onClick={() => navigate("/DoctorDashboard")}>
             <button 
-              type="button"
               class="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
               style={{
               backgroundColor: "#616edf",
               color: "#fff",
               fontSize: "1.5vw",
-              padding: "0.8vw 1.5vw",
+              padding: "0.8vw ",
             }}
             >
               {t("enter")}

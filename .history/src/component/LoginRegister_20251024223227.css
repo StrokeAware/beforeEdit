@@ -867,8 +867,11 @@
 }
 
 
+
+
 /* --- Start Button --- */
 .Start1 {
+  align-items: center;
   justify-self: center;
   justify-content: center;
 }

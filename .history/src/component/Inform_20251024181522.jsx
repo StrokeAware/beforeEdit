@@ -108,56 +108,31 @@ export function Inform() {
       <div className="navbar-spacer"></div>
 
       {/* BANNER */}
-       <div className="banner1-1">
-        <div
-          className="banner-content d-flex flex-column align-items-end justify-content-center text-end"
-          style={{
-            width: "fit-content",              
-            padding : "0 2vw",    
-            height: "100%",
-            color: "white",
-          }}
+      <div className="banner1-1">
+  <div className="container-fluid h-100 d-flex flex-column justify-content-center">
+    <div className="row justify-content-end text-end">
+      <div className="col-12 col-md-8 col-lg-6 pe-lg-5">
+        <h2 className="fw-semibold text-white mb-2">
+          แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิค ASIS
+        </h2>
+        <p className="text-white-50 mb-3">
+          StrokeSight: Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score
+        </p>
+        <button
+          type="button"
+          className="btn btn-primary rounded-pill fw-bold shadow px-4 py-2"
+          style={{ backgroundColor: "#616edf", border: "none" }}
+          onClick={() => navigate("/PatientDetail")}
         >
-          {/* กล่องข้อความ */}
-          <div style={{ lineHeight: 1.4 }}>
-            <div
-              className="infor1-firstpic fw-semibold "
-              style={{
-                fontSize: "1.6vw",
-                color: "#fff",
-              }}
-            >
-              แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
-            </div>
-
-            <div
-              className="infor3-firstpic"
-              style={{
-                fontSize: "1.2vw",
-                color: "rgba(255,255,255,0.8)",
-              }}
-            >
-              StrokeSight: Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score
-            </div>
-          </div>
-
-          {/* ปุ่มอยู่ข้างล่าง */}
-          <button
-            type="button"
-            className="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
-            style={{
-              backgroundColor: "#616edf",
-              color: "#fff",
-              fontSize: "1.5vw",
-              padding: "0.8vw 1.7vw",
-              whiteSpace: "nowrap",
-            }}
-            onClick={() => navigate("/PatientDetail")}
-          >
-            {t("start")}
-          </button>
-        </div>
+          {t("start")}
+        </button>
       </div>
+    </div>
+  </div>
+</div>
+
+
+
 
       <div style={{ width: "100%", height: "0.5vw", background: "#616edf" }}></div>
 
@@ -192,18 +167,7 @@ export function Inform() {
           <div className="infor2-banner2">{t("follow")}</div>
           <div className="infor3-banner2">{t("danger")}</div>
           <div className="Start1" onClick={() => navigate("/DoctorDashboard")}>
-            <button 
-              type="button"
-              class="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow"
-              style={{
-              backgroundColor: "#616edf",
-              color: "#fff",
-              fontSize: "1.5vw",
-              padding: "0.8vw 1.5vw",
-            }}
-            >
-              {t("enter")}
-            </button>
+            <div class="fw-semibold text-white fs-5 Start-text-enter">{t("enter")}</div>
           </div>
         </div>
       </div>

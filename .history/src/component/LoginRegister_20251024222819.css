@@ -867,10 +867,24 @@
 }
 
 
+
+
 /* --- Start Button --- */
 .Start1 {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-self: center;
   justify-content: center;
+  width: clamp(0.2rem, 8vw, 20rem);
+  height: clamp(0.2rem, 4vw, 20rem);
+  margin-top: 1.5vw;
 }
 .Start-text-enter {
   color: white;

@@ -209,130 +209,144 @@ export function Inform() {
       </div>
 
       <footer
-        className="container-fluid"
+  className="container-fluid"
+  style={{
+    backgroundColor: "#e6e9f5",
+    padding: "3vw 5vw",
+  }}
+>
+  <div className="row align-items-start">
+    {/* ฝั่งซ้าย */}
+    <div className="col-12 col-lg-7 d-flex flex-column mb-4 mb-lg-0">
+      <img
+        src={logofooter}
+        alt="logo"
+        className="img-fluid mb-3"
+        style={{ maxWidth: "18vw", height: "auto" }}
+      />
+
+      <div
+        className="fw-bold"
         style={{
-          backgroundColor: "#e6e9f5",
-          padding: "1vw 2vw",
+          color: "#166989",
+          fontSize: "clamp(1rem, 1.8vw, 1.4rem)",
+          lineHeight: 1.4,
+          fontFamily: "Prompt, sans-serif",
         }}
       >
-        <div className="row align-items-start">
-          {/* ฝั่งซ้าย */}
-          <div className="col-12 col-lg-8 d-flex flex-column ">
-            <img
-              src={logofooter}
-              alt="logo"
-              className="img-fluid mb-3"
-              style={{ maxWidth: "18vw", height: "auto" }}
-            />
+        STROKE SIGHT
+      </div>
 
-            <div
-              style={{
-                color: "#166989",
-                fontWeight: 600,
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
-                lineHeight: 1.5,
-                fontFamily: "Prompt, sans-serif",
-                marginTop: "0.6vw",
-              }}
-            >
-              แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุกด้วยเทคนิคใหม่เอซิสผ่านปัญญาประดิษฐ์
-            </div>
+      <div
+        style={{
+          color: "#166989",
+          fontWeight: 600,
+          fontSize: "clamp(0.9rem, 1.4vw, 1.15rem)",
+          lineHeight: 1.5,
+          fontFamily: "Prompt, sans-serif",
+          marginTop: "1rem",
+        }}
+      >
+        แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุกด้วยเทคนิคใหม่เอซิสผ่านปัญญาประดิษฐ์
+      </div>
 
-            <div
-              style={{
-                color: "#333",
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
-                lineHeight: 1.5,
-                fontWeight: 600,
-                fontFamily: "Poppins, sans-serif",
-              }}
-            >
-              Prehospital Stroke Screening Platform using novel Acute Stroke
-              Integrated Score (ASIS) with Artificial Intelligence
-            </div>
-          </div>
+      <div
+        style={{
+          color: "#333",
+          fontSize: "clamp(0.9rem, 1.2vw, 1.1rem)",
+          lineHeight: 1.5,
+          fontWeight: 600,
+          marginTop: "1rem",
+          fontFamily: "Poppins, sans-serif",
+        }}
+      >
+        Prehospital Stroke Screening Platform using novel Acute Stroke
+        Integrated Score (ASIS) with Artificial Intelligence
+      </div>
+    </div>
 
-          {/* ฝั่งขวา */}
-          <div
-            className="col-12 col-lg-4 text-lg-end d-flex flex-column justify-content-start"
-            // ❌ เอา marginTop ติดลบออก
-          >
-            <div
-              className="fw-bold"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(1rem, 4vw, 5rem)",
-              }}
-            >
-              STROKE SIGHT
-            </div>
+    {/* ฝั่งขวา */}
+    <div
+      className="col-12 col-lg-5 text-lg-end d-flex flex-column justify-content-start"
+      // ❌ เอา marginTop ติดลบออก
+    >
+      <div
+        className="fw-bold"
+        style={{
+          color: "#166989",
+          fontSize: "clamp(1.4rem, 2vw, 2.2rem)",
+          lineHeight: 1.2,
+        }}
+      >
+        STROKE SIGHT
+      </div>
 
-            <p
-              className="mb-1"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              117 ถนนแก้วนวรัฐ ตำบลวัดเกต อำเภอเมือง เชียงใหม่ 50000
-            </p>
+      <p
+        className="mb-1"
+        style={{
+          color: "#166989",
+          fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
+          lineHeight: 1.5,
+        }}
+      >
+        117 ถนนแก้วนวรัฐ ตำบลวัดเกต อำเภอเมือง เชียงใหม่ 50000
+      </p>
 
-            <p
-              className="mb-1"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              053-242550, 053-242038
-            </p>
+      <p
+        className="mb-1"
+        style={{
+          color: "#166989",
+          fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
+          lineHeight: 1.5,
+        }}
+      >
+        053-242550, 053-242038
+      </p>
 
-            <p
-              className="mb-3"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              StrokeSight@gmail.com
-            </p>
+      <p
+        className="mb-3"
+        style={{
+          color: "#166989",
+          fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
+          lineHeight: 1.5,
+        }}
+      >
+        StrokeSight@gmail.com
+      </p>
 
-            <div
-              className="fw-bold text-secondary mb-2"
-              style={{
-                fontSize: "clamp(0.8rem, 1vw, 1rem)",
-              }}
-            >
-              KEY PARTNER
-            </div>
+      <div
+        className="fw-bold text-secondary mb-2"
+        style={{
+          fontSize: "clamp(0.8rem, 1vw, 1rem)",
+        }}
+      >
+        KEY PARTNER
+      </div>
 
-            <div className="d-flex justify-content-lg-end justify-content-start">
-              <img
-                src={PRC}
-                alt="PRC Partner"
-                className="me-3"
-                style={{
-                  width: "clamp(2.5rem, 4vw, 5rem)",
-                  height: "auto",
-                  objectFit: "contain",
-                }}
-              />
-              <img
-                src={NU}
-                alt="NU Partner"
-                style={{
-                  width: "clamp(2.5rem, 3.8vw, 4.8rem)",
-                  height: "auto",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </footer>
+      <div className="d-flex justify-content-lg-end justify-content-start">
+        <img
+          src={PRC}
+          alt="PRC Partner"
+          className="me-3"
+          style={{
+            width: "clamp(2.5rem, 4vw, 5rem)",
+            height: "auto",
+            objectFit: "contain",
+          }}
+        />
+        <img
+          src={NU}
+          alt="NU Partner"
+          style={{
+            width: "clamp(2.5rem, 4vw, 5rem)",
+            height: "auto",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 

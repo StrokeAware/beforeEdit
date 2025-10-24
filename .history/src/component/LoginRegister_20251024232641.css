@@ -907,7 +907,7 @@
 }
 
 /* ฝั่งซ้าย text intro */
-.footer {
+footer {
   display: flex;
   align-items: center !important;
   justify-content: center !important;

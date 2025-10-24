@@ -212,12 +212,12 @@ export function Inform() {
         className="container-fluid"
         style={{
           backgroundColor: "#e6e9f5",
-          padding: "1vw 2vw",
+          padding: "3vw 5vw",
         }}
       >
         <div className="row align-items-start">
           {/* ฝั่งซ้าย */}
-          <div className="col-12 col-lg-8 d-flex flex-column ">
+          <div className="col-12 col-lg-7 d-flex flex-column ">
             <img
               src={logofooter}
               alt="logo"
@@ -232,7 +232,7 @@ export function Inform() {
                 fontSize: "clamp(0.9rem, 2vw, 3rem)",
                 lineHeight: 1.5,
                 fontFamily: "Prompt, sans-serif",
-                marginTop: "0.6vw",
+                marginTop: "1rem",
               }}
             >
               แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุกด้วยเทคนิคใหม่เอซิสผ่านปัญญาประดิษฐ์
@@ -241,9 +241,10 @@ export function Inform() {
             <div
               style={{
                 color: "#333",
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
+                fontSize: "clamp(0.9rem, 3vw, 1.1rem)",
                 lineHeight: 1.5,
                 fontWeight: 600,
+                marginTop: "1rem",
                 fontFamily: "Poppins, sans-serif",
               }}
             >
@@ -254,14 +255,15 @@ export function Inform() {
 
           {/* ฝั่งขวา */}
           <div
-            className="col-12 col-lg-4 text-lg-end d-flex flex-column justify-content-start"
+            className="col-12 col-lg-5 text-lg-end d-flex flex-column justify-content-start"
             // ❌ เอา marginTop ติดลบออก
           >
             <div
               className="fw-bold"
               style={{
                 color: "#166989",
-                fontSize: "clamp(1rem, 4vw, 5rem)",
+                fontSize: "clamp(1.4rem, 2vw, 2.2rem)",
+                lineHeight: 1.2,
               }}
             >
               STROKE SIGHT
@@ -271,7 +273,7 @@ export function Inform() {
               className="mb-1"
               style={{
                 color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
+                fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
                 lineHeight: 1.5,
               }}
             >
@@ -282,7 +284,7 @@ export function Inform() {
               className="mb-1"
               style={{
                 color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
+                fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
                 lineHeight: 1.5,
               }}
             >
@@ -293,7 +295,7 @@ export function Inform() {
               className="mb-3"
               style={{
                 color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
+                fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
                 lineHeight: 1.5,
               }}
             >
@@ -324,7 +326,7 @@ export function Inform() {
                 src={NU}
                 alt="NU Partner"
                 style={{
-                  width: "clamp(2.5rem, 3.8vw, 4.8rem)",
+                  width: "clamp(2.5rem, 4vw, 5rem)",
                   height: "auto",
                   objectFit: "contain",
                 }}

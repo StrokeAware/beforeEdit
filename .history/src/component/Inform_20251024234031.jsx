@@ -293,7 +293,7 @@ export function Inform() {
               className="mb-3"
               style={{
                 color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
+                fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
                 lineHeight: 1.5,
               }}
             >
@@ -324,7 +324,7 @@ export function Inform() {
                 src={NU}
                 alt="NU Partner"
                 style={{
-                  width: "clamp(2.5rem, 3.8vw, 4.8rem)",
+                  width: "clamp(2.5rem, 4vw, 5rem)",
                   height: "auto",
                   objectFit: "contain",
                 }}

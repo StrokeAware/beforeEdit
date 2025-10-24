@@ -907,16 +907,7 @@
 }
 
 /* ฝั่งซ้าย text intro */
-.footer {
-  display: flex;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 4vh 5vw !important;
-}
 
-.footer .row {
-  align-items: center !important;
-}
 
 /*
 .thai-font {

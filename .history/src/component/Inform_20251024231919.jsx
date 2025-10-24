@@ -208,133 +208,49 @@ export function Inform() {
         </div>
       </div>
 
-      <footer
-        className="container-fluid"
-        style={{
-          backgroundColor: "#e6e9f5",
-          padding: "1vw 2vw",
-        }}
-      >
-        <div className="row align-items-start">
-          {/* ฝั่งซ้าย */}
-          <div className="col-12 col-lg-8 d-flex flex-column ">
-            <img
-              src={logofooter}
-              alt="logo"
-              className="img-fluid mb-3"
-              style={{ maxWidth: "18vw", height: "auto" }}
-            />
+      <div className="banner3">
+        <div className="row g-4 align-items-start">
 
-            <div
-              style={{
-                color: "#166989",
-                fontWeight: 600,
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
-                lineHeight: 1.5,
-                fontFamily: "Prompt, sans-serif",
-                marginTop: "0.6vw",
-              }}
-            >
+          {/* ซ้าย */}
+          <div className="footer-left d-flex flex-column">
+            <img src={logofooter} alt="logo" className="footer-logo align-self-start align-self-lg-start" />
+            <div className="footertext1 mt-3">
               แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุกด้วยเทคนิคใหม่เอซิสผ่านปัญญาประดิษฐ์
             </div>
 
-            <div
-              style={{
-                color: "#333",
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
-                lineHeight: 1.5,
-                fontWeight: 600,
-                fontFamily: "Poppins, sans-serif",
-              }}
-            >
-              Prehospital Stroke Screening Platform using novel Acute Stroke
-              Integrated Score (ASIS) with Artificial Intelligence
+            <div className="footertext2">
+              Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score (ASIS) with Artificial Intelligence
             </div>
           </div>
 
-          {/* ฝั่งขวา */}
-          <div
-            className="col-12 col-lg-4 text-lg-end d-flex flex-column justify-content-start"
-            // ❌ เอา marginTop ติดลบออก
-          >
+          {/* ขวา */}
+          <div className="footer-right col-12 col-lg-4 d-flex flex-column text-end">
             <div
-              className="fw-bold"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(1rem, 4vw, 5rem)",
-              }}
+              className="fw-bold footertext3"
+              style={{ fontSize: 'clamp(0.8rem, 4vw, 10rem)', color: '#166989', marginBottom: '0.5rem' }}
             >
               STROKE SIGHT
             </div>
 
-            <p
-              className="mb-1"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              117 ถนนแก้วนวรัฐ ตำบลวัดเกต อำเภอเมือง เชียงใหม่ 50000
-            </p>
+            <div className="footertext4">{t("address")}</div>
+            <div className="footertext5">053-242550, 053-242038</div>
+            <div className="footertext6">StrokeSight@gmail.com</div>
 
-            <p
-              className="mb-1"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              053-242550, 053-242038
-            </p>
+            <div className="footertext7 text-end">
+              <span className="d-block mb-2">KEY PARTNER</span>
 
-            <p
-              className="mb-3"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              StrokeSight@gmail.com
-            </p>
+              <a href="https://www.prc.ac.th/#" className="d-inline-block">
+                <img src={PRC} className="footerpic" alt="partners" />
+              </a>
 
-            <div
-              className="fw-bold text-secondary mb-2"
-              style={{
-                fontSize: "clamp(0.8rem, 1vw, 1rem)",
-              }}
-            >
-              KEY PARTNER
-            </div>
-
-            <div className="d-flex justify-content-lg-end justify-content-start">
-              <img
-                src={PRC}
-                alt="PRC Partner"
-                className="me-3"
-                style={{
-                  width: "clamp(2.5rem, 4vw, 5rem)",
-                  height: "auto",
-                  objectFit: "contain",
-                }}
-              />
-              <img
-                src={NU}
-                alt="NU Partner"
-                style={{
-                  width: "clamp(2.5rem, 3.8vw, 4.8rem)",
-                  height: "auto",
-                  objectFit: "contain",
-                }}
-              />
+              <a href="https://www.nu.ac.th/" className="d-inline-block ms-2">
+                <img src={NU} className="footerpic" alt="partners" />
+              </a>
             </div>
           </div>
+
         </div>
-      </footer>
-
-
+      </div>
 
       <div class="d-flex justify-content-center align-items-center text-white w-100"style={{backgroundColor: '#ADADAD', marginTop:'0.7vw' }}>
         Copyright © 2025 StrokeSight ®

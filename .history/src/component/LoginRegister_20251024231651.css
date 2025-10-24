@@ -539,7 +539,7 @@
 }
 .banner3 {
   background-color: #e6e9f5;
-  width : 100%;
+  wid
   padding: 2vw;
   font-family: 'Poppins', system-ui, sans-serif;
 }
@@ -878,10 +878,11 @@
   height: auto;
 }
 .footer-left {
-  width:60%;
+  width:62%;
   background-color: #27ae60;
 }
 .footer-right {
+  width:36%;
   min-width: 200px;
   background-color: #6a00ff;
 }
@@ -907,15 +908,56 @@
 }
 
 /* ฝั่งซ้าย text intro */
-.footer {
-  display: flex;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 4vh 5vw !important;
+.footertext1 {
+  color: #166989;
+  font-weight: 600;
+  font-size: 1vw;
+  margin-top: 2vw;
+  line-height: 1.4;
+  font-family: 'Prompt', sans-serif;
 }
 
-.footer .row {
-  align-items: center !important;
+.footertext2 {
+  color: #464646;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* หัว STROKE SIGHT ด้านขวา */
+.footertext3 {
+  font-weight: bold;
+  color: #166989;
+  line-height: 1.2;
+}
+
+/* contact info ขวา */
+.footertext4,
+.footertext5,
+.footertext6 {
+  font-size: clamp(0.5rem, 1.4vw, 10rem);
+  color: #166989;
+  margin-top: 0.3rem;
+  line-height: 1.5;
+  text-align: right;
+  font-weight: 500;
+}
+
+.footertext7 {
+  color: #84abba;
+  font-weight: 500;
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  margin-top: 2vw;
+  line-height: 1.4;
+  text-align: right;
+}
+
+/* โลโก้พาร์ทเนอร์ */
+.footerpic {
+  width: clamp(2rem , 4.5vw, 6.5rem);
+  height: clamp(2rem , 4vw, 6rem);
+  object-fit: contain;
 }
 
 /*

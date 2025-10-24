@@ -209,131 +209,75 @@ export function Inform() {
       </div>
 
       <footer
-        className="container-fluid"
-        style={{
-          backgroundColor: "#e6e9f5",
-          padding: "1vw 2vw",
-        }}
+        className="container-fluid d-flex align-items-center justify-content-between py-5"
+        style={{ backgroundColor: "#e6e9f5", minHeight: "40vh" }}
       >
-        <div className="row align-items-start">
+        <div className="row flex-grow-1 w-100 align-items-center">
           {/* ฝั่งซ้าย */}
-          <div className="col-12 col-lg-8 d-flex flex-column ">
+          <div className="col-12 col-lg-8 d-flex flex-column justify-content-center">
             <img
               src={logofooter}
               alt="logo"
               className="img-fluid mb-3"
-              style={{ maxWidth: "18vw", height: "auto" }}
+              style={{ maxWidth: "18vw" }}
             />
-
-            <div
-              style={{
-                color: "#166989",
-                fontWeight: 600,
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
-                lineHeight: 1.5,
-                fontFamily: "Prompt, sans-serif",
-                marginTop: "0.6vw",
-              }}
+            <h4
+              className="fw-bold mb-2"
+              style={{ color: "#166989", fontSize: "clamp(1rem, 2vw, 1.5rem)" }}
             >
               แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุกด้วยเทคนิคใหม่เอซิสผ่านปัญญาประดิษฐ์
-            </div>
-
-            <div
-              style={{
-                color: "#333",
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
-                lineHeight: 1.5,
-                fontWeight: 600,
-                fontFamily: "Poppins, sans-serif",
-              }}
+            </h4>
+            <p
+              className="fw-semibold mb-0"
+              style={{ fontSize: "clamp(0.9rem, 2vw, 3rem)", color: "#333" }}
             >
               Prehospital Stroke Screening Platform using novel Acute Stroke
               Integrated Score (ASIS) with Artificial Intelligence
-            </div>
+            </p>
           </div>
 
           {/* ฝั่งขวา */}
-          <div
-            className="col-12 col-lg-4 text-lg-end d-flex flex-column justify-content-start"
-            // ❌ เอา marginTop ติดลบออก
-          >
-            <div
+          <div className="col-12 col-lg-4 text-lg-end d-flex flex-column justify-content-center" >
+            <h3
               className="fw-bold"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(1rem, 4vw, 5rem)",
-              }}
+              style={{ color: "#166989", fontSize: "4vw" }}
             >
               STROKE SIGHT
-            </div>
-
-            <p
-              className="mb-1"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
+            </h3>
+            <p className="mb-1" style={{ color: "#166989", fontSize: "clamp(0.8rem, 1.2vw, 1rem)" }}>
               117 ถนนแก้วนวรัฐ ตำบลวัดเกต อำเภอเมือง เชียงใหม่ 50000
             </p>
-
-            <p
-              className="mb-1"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
+            <p className="mb-1" style={{ color: "#166989", fontSize: "clamp(0.8rem, 1.2vw, 1rem)" }}>
               053-242550, 053-242038
             </p>
-
-            <p
-              className="mb-3"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
+            <p className="mb-3" style={{ color: "#166989", fontSize: "clamp(0.8rem, 1.2vw, 1rem)" }}>
               StrokeSight@gmail.com
             </p>
-
-            <div
-              className="fw-bold text-secondary mb-2"
-              style={{
-                fontSize: "clamp(0.8rem, 1vw, 1rem)",
-              }}
-            >
-              KEY PARTNER
-            </div>
-
-            <div className="d-flex justify-content-lg-end justify-content-start">
+            <div className="text-secondary fw-bold mb-2">KEY PARTNER</div>
+            <div>
               <img
                 src={PRC}
                 alt="PRC Partner"
-                className="me-3"
+                className="me-2"
                 style={{
                   width: "clamp(2.5rem, 4vw, 5rem)",
                   height: "auto",
-                  objectFit: "contain",
+                  verticalAlign: "middle",
                 }}
               />
               <img
                 src={NU}
                 alt="NU Partner"
                 style={{
-                  width: "clamp(2.5rem, 3.8vw, 4.8rem)",
+                  width: "clamp(2.5rem, 4vw, 5rem)",
                   height: "auto",
-                  objectFit: "contain",
+                  verticalAlign: "middle",
                 }}
               />
             </div>
           </div>
         </div>
       </footer>
-
 
 
       <div class="d-flex justify-content-center align-items-center text-white w-100"style={{backgroundColor: '#ADADAD', marginTop:'0.7vw' }}>

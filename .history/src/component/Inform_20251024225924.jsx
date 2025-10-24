@@ -144,13 +144,14 @@ export function Inform() {
           {/* ปุ่มอยู่ข้างล่าง */}
           <button
             type="button"
-            className="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow "
+            className="btn d-flex justify-content-center rounded-pill border-0 fw-bold mt-3 shadow p-fixed"
             style={{
-              backgroundColor: "#616edf",
+              backgroundColor: "#00ff2fff",
               color: "#fff",
               fontSize: "1.5vw",
               padding: "0.8vw 1.7vw",
               whiteSpace: "nowrap",
+              position : "fixed"
             }}
             onClick={() => navigate("/PatientDetail")}
           >
@@ -208,134 +209,34 @@ export function Inform() {
         </div>
       </div>
 
-      <footer
-        className="container-fluid"
-        style={{
-          backgroundColor: "#e6e9f5",
-          padding: "1vw 2vw",
-        }}
-      >
-        <div className="row align-items-start">
-          {/* ฝั่งซ้าย */}
-          <div className="col-12 col-lg-8 d-flex flex-column ">
-            <img
-              src={logofooter}
-              alt="logo"
-              className="img-fluid mb-3"
-              style={{ maxWidth: "18vw", height: "auto" }}
-            />
-
-            <div
-              style={{
-                color: "#166989",
-                fontWeight: 600,
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
-                lineHeight: 1.5,
-                fontFamily: "Prompt, sans-serif",
-                marginTop: "0.6vw",
-              }}
-            >
-              แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุกด้วยเทคนิคใหม่เอซิสผ่านปัญญาประดิษฐ์
+      <div className="banner3">
+        <div className="footer-left">
+          <img src={logofooter} alt="logo" className="footer-logo" />
+            <div className="footertext1">
+            แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุกด้วยเทคนิคใหม่เอซิสผ่านปัญญาประดิษฐ์
             </div>
-
-            <div
-              style={{
-                color: "#333",
-                fontSize: "clamp(0.9rem, 2vw, 3rem)",
-                lineHeight: 1.5,
-                fontWeight: 600,
-                fontFamily: "Poppins, sans-serif",
-              }}
-            >
-              Prehospital Stroke Screening Platform using novel Acute Stroke
-              Integrated Score (ASIS) with Artificial Intelligence
+            <div className="footertext2">
+              Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score (ASIS) with Artificial Intelligence
             </div>
-          </div>
+        </div>
 
-          {/* ฝั่งขวา */}
-          <div
-            className="col-12 col-lg-4 text-lg-end d-flex flex-column justify-content-start"
-            // ❌ เอา marginTop ติดลบออก
-          >
-            <div
-              className="fw-bold"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(1rem, 4vw, 5rem)",
-              }}
-            >
-              STROKE SIGHT
-            </div>
-
-            <p
-              className="mb-1"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              117 ถนนแก้วนวรัฐ ตำบลวัดเกต อำเภอเมือง เชียงใหม่ 50000
-            </p>
-
-            <p
-              className="mb-1"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              053-242550, 053-242038
-            </p>
-
-            <p
-              className="mb-3"
-              style={{
-                color: "#166989",
-                fontSize: "clamp(0.8rem, 1.2vw, 2rem)",
-                lineHeight: 1.5,
-              }}
-            >
-              StrokeSight@gmail.com
-            </p>
-
-            <div
-              className="fw-bold text-secondary mb-2"
-              style={{
-                fontSize: "clamp(0.8rem, 1vw, 1rem)",
-              }}
-            >
-              KEY PARTNER
-            </div>
-
-            <div className="d-flex justify-content-lg-end justify-content-start">
-              <img
-                src={PRC}
-                alt="PRC Partner"
-                className="me-3"
-                style={{
-                  width: "clamp(2.5rem, 4vw, 5rem)",
-                  height: "auto",
-                  objectFit: "contain",
-                }}
-              />
-              <img
-                src={NU}
-                alt="NU Partner"
-                style={{
-                  width: "clamp(2.5rem, 3.8vw, 4.8rem)",
-                  height: "auto",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
+        <div className="footer-right">
+          <div className="fw-bold text-end d-fixed"style={{fontSize: 'clamp(0.8rem, 4vw, 10rem)',color: '#166989',marginBottom: '0.5rem'}}>STROKE SIGHT</div>
+          <div className="footertext4">{t("address")}</div>
+          <div className="footertext5">053-242550, 053-242038</div>
+          <div className="footertext6">StrokeSight@gmail.com</div>
+         
+          <div className="footertext7">
+            <span classname="kuy">KEY PARTNER</span><br />
+            <a href="https://www.prc.ac.th/#">
+              <img src={PRC} className="footerpic" alt="partners"/>
+            </a>
+            <a href="https://www.nu.ac.th/">
+            <img src={NU} className="footerpic" alt="partners" />
+            </a>
           </div>
         </div>
-      </footer>
-
-
-
+      </div>
       <div class="d-flex justify-content-center align-items-center text-white w-100"style={{backgroundColor: '#ADADAD', marginTop:'0.7vw' }}>
         Copyright © 2025 StrokeSight ®
       </div>       

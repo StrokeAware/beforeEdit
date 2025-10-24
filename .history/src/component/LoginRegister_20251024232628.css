@@ -907,14 +907,14 @@
 }
 
 /* ฝั่งซ้าย text intro */
-.footer {
+footer {
   display: flex;
   align-items: center !important;
   justify-content: center !important;
   padding: 4vh 5vw !important;
 }
 
-.footer .row {
+footer .row {
   align-items: center !important;
 }
 

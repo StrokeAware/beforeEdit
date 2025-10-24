@@ -324,7 +324,7 @@ export function Inform() {
                 src={NU}
                 alt="NU Partner"
                 style={{
-                  width: "clamp(2.5rem, 3.8vw, 4.8rem)",
+                  width: "clamp(2.5rem, 3.8vw, 5rem)",
                   height: "auto",
                   objectFit: "contain",
                 }}

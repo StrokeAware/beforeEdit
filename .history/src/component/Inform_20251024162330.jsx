@@ -119,7 +119,7 @@ export function Inform() {
             </div>
           </div>  
           <div class="btn btn-primary d-flex flex-column align-items-center justify-content-center rounded-pill py-2 px-4 mt-3 Start2" onClick={() => navigate("/PatientDetail")}>
-            <div class="fw-semibold text-white fs-6 Start-text-start">{t("start")}</div>
+            <div className="Start-text-start">{t("start")}</div>
           </div>
         </div>
       </div>

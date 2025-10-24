@@ -119,21 +119,22 @@ export function Inform() {
             </div>
           </div>  
           <button
-              type="button"
-              className="btn btn-primary d-flex flex-column align-items-center justify-content-center rounded-pill py-2 px-4 mt-3"
-              style={{ width: "clamp(0.2rem, 8vw, 20rem)", height: "clamp(0.2rem, 4vw, 20rem)" }}
-              onClick={() => navigate("/PatientDetail")}
+            type="button"
+            className="btn btn-primary d-flex flex-column align-items-center justify-content-center rounded-pill py-2 px-4 mt-3"
+            style={{ width: "clamp(0.2rem, 8vw, 20rem)", height: "clamp(0.2rem, 4vw, 20rem)" }}
+            onClick={() => navigate("/PatientDetail")}
+          >
+            <span
+              className="fw-semibold text-white"
+              style={{
+                width: "clamp(3rem, 4vw, 6rem)",
+                fontSize: "clamp(0.5rem, 1.5vw, 2rem)",
+              }}
             >
-              <span
-                className="fw-semibold text-white"
-                style={{
-                  width: "clamp(3rem, 4vw, 6rem)",
-                  fontSize: "clamp(0.5rem, 1.5vw, 2rem)",
-                }}
-              >
-                {t("start")}
-              </span>
-            </button>
+              {t("start")}
+            </span>
+          </button>
+
         </div>
       </div>
 

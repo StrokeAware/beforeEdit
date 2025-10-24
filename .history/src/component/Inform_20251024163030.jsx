@@ -134,6 +134,7 @@ export function Inform() {
                 {t("start")}
               </span>
             </button>
+
         </div>
       </div>
 

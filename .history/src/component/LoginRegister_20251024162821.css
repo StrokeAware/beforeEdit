@@ -921,6 +921,29 @@
   height: clamp(0.2rem, 4vw, 20rem);
   margin-top: 1.5vw;
 }
+.Start2 {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  width: clamp(0.2rem, 8vw, 20rem);
+  height: clamp(0.2rem, 4vw, 20rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: end;
+  margin-top: 1vw;
+}
+.Start-text-start {
+  color: white;
+  width: clamp(3rem, 4vw, 6rem);
+  font-size: clamp(0.5rem, 1.5vw, 2rem);
+  font-weight: 600;
+}
 .Start-text-enter {
   color: white;
   font-size: clamp(0.8rem, 1.5vw, 2rem);

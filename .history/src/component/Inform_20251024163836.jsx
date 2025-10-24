@@ -108,59 +108,37 @@ export function Inform() {
       <div className="navbar-spacer"></div>
 
       {/* BANNER */}
-        <div className="banner1-1">
-          <div
-            className="banner-content d-flex flex-column align-items-center justify-content-center text-center"
-            style={{
-              width: "100%",
-              height: "100%",
-              color: "white",
-              padding: "0 2rem",
-            }}
-          >
-            {/* กล่องข้อความ */}
-            <div className="bannerforcon" style={{ lineHeight: 1.4 }}>
-              <div
-                className="infor1-firstpic fw-semibold"
-                style={{
-                  fontSize: "clamp(1rem, 1.3vw, 1.5rem)",
-                  marginBottom: "0.5rem",
-                  color: "#fff",
-                }}
-              >
-                แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
-              </div>
-
-              <div
-                className="infor3-firstpic"
-                style={{
-                  fontSize: "clamp(0.8rem, 1vw, 1rem)",
-                  color: "rgba(255,255,255,0.8)",
-                }}
-              >
-                StrokeSight: Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score
-              </div>
+      <div className="banner1-1">
+        <div
+          className="banner-content d-flex align-items-center justify-content-between"
+          style={{ width: "100%" }}
+        >
+          <div className="bannerforcon">
+            <div className="infor1-firstpic">
+              แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
             </div>
-
-            {/* ปุ่มอยู่ข้างล่าง */}
-            <button
-              type="button"
-              className="btn d-flex justify-content-center align-self-end rounded-pill border-0 fw-bold mt-3 shadow"
-              style={{
-                backgroundColor: "#616edf",
-                color: "#fff",
-                fontSize: "1rem",
-                padding: "0.6rem 1.5rem",
-                whiteSpace: "nowrap",
-              }}
-              onClick={() => navigate("/PatientDetail")}
-            >
-              {t("start")}
-            </button>
-          </div>
+            <div className="infor3-firstpic">
+              StrokeSight: Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score
+            </div>
         </div>
 
+          <button
+            type="button"
+            className="btn d-flex align-items-center justify-content-center rounded-pill border-0 fw-bold ms-3"
+            style={{
+              backgroundColor: "#1e90ff",
+              color: "#fff",
+              fontSize: "1.1rem",
+              padding: "0.6rem 1.5rem",
+              whiteSpace: "nowrap", // กันไม่ให้ตัดบรรทัดในปุ่ม
+            }}
+            onClick={() => navigate("/PatientDetail")}
+          >
+            {t("start")}
+          </button>
+        </div>
 
+      </div>
 
       <div style={{ width: "100%", height: "0.5vw", background: "#616edf" }}></div>
 

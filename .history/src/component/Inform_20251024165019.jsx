@@ -145,7 +145,7 @@ export function Inform() {
             {/* ปุ่มอยู่ข้างล่าง */}
             <button
               type="button"
-              className="btn d-flex justify-content-center align-self-end rounded-pill border-0 fw-bold mt-3 shadow"
+              className="btn d-flex justify-content-center justify-self-center rounded-pill border-0 fw-bold mt-3 shadow"
               style={{
                 backgroundColor: "#616edf",
                 color: "#fff",

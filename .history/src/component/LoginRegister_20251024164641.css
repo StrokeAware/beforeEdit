@@ -551,6 +551,7 @@
   width: clamp(20rem ,100%,100rem);
   margin-left: -2vw;
   flex-direction: column;
+  background-color: #23AE96;
 }
 
 .banner-con1 {

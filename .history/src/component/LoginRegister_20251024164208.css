@@ -508,8 +508,8 @@
   background-image: url(./pic/mainpic.png);
   background-size: cover;
   background-position: center;
+  justify-content: end;
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   color: white;
@@ -539,7 +539,16 @@
   gap: 1vw;
 }
 
-  .banner-content {
+.banner1-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner1-1 .banner-content {
   justify-self: end;
   z-index: 2;
   width: 70%;
@@ -550,7 +559,9 @@
   display: flex;
   width: clamp(20rem ,100%,100rem);
   margin-left: -2vw;
+  justify-content: center;
   flex-direction: column;
+  background-color: ;
 }
 
 .banner-con1 {
@@ -561,6 +572,16 @@
   width: clamp(20rem, 40vw, 50vw);
   height: clamp(10rem, 20vw, 50vw);          
   justify-content: center;
+}
+.banner1-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  z-index: 1;
 }
 .header-container {
   display: flex;

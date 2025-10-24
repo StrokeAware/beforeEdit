@@ -108,59 +108,61 @@ export function Inform() {
       <div className="navbar-spacer"></div>
 
       {/* BANNER */}
-        <div className="banner1-1">
-          <div
-            className="banner-content d-flex flex-column align-items-center justify-content-center text-center"
-            style={{
-              width: "100%",
-              height: "100%",
-              color: "white",
-              padding: "0 2rem",
-            }}
+      <div className="banner1-1">
+        <div
+            className="d-flex align-items-center justify-content-center"
+            style={{ width: "100%" }}
           >
             {/* กล่องข้อความ */}
-            <div className="bannerforcon" style={{ lineHeight: 1.4 }}>
+            <div
+              className="text-center"
+              style={{
+                lineHeight: 1.4,
+                marginRight: "1rem", // เว้นระยะขวาก่อนปุ่ม
+              }}
+            >
               <div
-                className="infor1-firstpic fw-semibold"
                 style={{
-                  fontSize: "clamp(1rem, 1.3vw, 1.5rem)",
-                  marginBottom: "0.5rem",
-                  color: "#fff",
+                  fontSize: "1rem",
+                  fontWeight: 600,
+                  color: "#fff", // หรือสีที่ดั้มใช้ (ในรูปจริงเป็นขาวบนพื้นมืด)
+                  whiteSpace: "normal",
                 }}
               >
                 แพลตฟอร์มคัดกรองโรคหลอดเลือดสมองนอกโรงพยาบาลแบบเชิงรุก ด้วยเทคนิคASIS
               </div>
-
               <div
-                className="infor3-firstpic"
                 style={{
-                  fontSize: "clamp(0.8rem, 1vw, 1rem)",
-                  color: "rgba(255,255,255,0.8)",
+                  fontSize: "0.9rem",
+                  fontWeight: 400,
+                  color: "#ddd",
+                  whiteSpace: "normal",
                 }}
               >
                 StrokeSight: Prehospital Stroke Screening Platform using novel Acute Stroke Integrated Score
               </div>
             </div>
 
-            {/* ปุ่มอยู่ข้างล่าง */}
+            {/* ปุ่ม */}
             <button
               type="button"
-              className="btn d-flex justify-content-center align-self-end rounded-pill border-0 fw-bold mt-3 shadow"
+              className="btn d-flex align-items-center justify-content-center rounded-pill border-0 fw-bold"
               style={{
-                backgroundColor: "#616edf",
+                backgroundColor: "#5a67f8", // สีม่วงฟ้าแบบในรูป
                 color: "#fff",
                 fontSize: "1rem",
-                padding: "0.6rem 1.5rem",
+                padding: "0.5rem 1rem",
                 whiteSpace: "nowrap",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.3)",
               }}
               onClick={() => navigate("/PatientDetail")}
             >
               {t("start")}
             </button>
           </div>
-        </div>
 
 
+      </div>
 
       <div style={{ width: "100%", height: "0.5vw", background: "#616edf" }}></div>
 

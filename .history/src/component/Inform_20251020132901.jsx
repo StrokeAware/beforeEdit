@@ -190,9 +190,9 @@ export function Inform() {
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center bg-primary text-white w-100"style={{backgroundColor: '#616edf', marginTop:'0.7vw' }}>
+      <footer class="d-flex justify-content-center align-items-center bg-primary text-white w-100"style={{backgroundColor: '#616edf', marginTop:'0.7vw' }}>
         Copyright © 2025 StrokeSight ®
-      </div>       
+      </footer>       
     <audio ref={audioRef} src={welcomeSound} />
     </div>
   );

@@ -174,7 +174,7 @@ export function Inform() {
         </div>
 
         <div className="footer-right">
-          <div className="fw-bold text-end d-fixed"style={{fontSize: 'clamp(0.8rem, 4vw, 10rem)',color: '#166989',marginBottom: '0.5rem'}}>STROKE SIGHT</div>
+          <div className="footertext3">STROKE SIGHT</div>
           <div className="footertext4">{t("address")}</div>
           <div className="footertext5">053-242550, 053-242038</div>
           <div className="footertext6">StrokeSight@gmail.com</div>
@@ -190,9 +190,9 @@ export function Inform() {
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center bg-primary text-white w-100"style={{backgroundColor: '#616edf', marginTop:'0.7vw' }}>
-        Copyright © 2025 StrokeSight ®
-      </div>       
+    <div className="footerbox">
+      <div className=""Copyright © 2025 StrokeSight ®
+    </div>             
     <audio ref={audioRef} src={welcomeSound} />
     </div>
   );

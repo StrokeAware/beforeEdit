@@ -2697,11 +2697,13 @@ body {
   transition: border-color 0.3s ease;
 }
 .footerbox{
-  display: flex;
+  display: ;
   width: 100%;
-  height: 4vw;
+  height: 10vw;
   background-color: #616edf;
   color: #fff;
   justify-content: center;
-  align-content: center;
+}
+.textfooterbox{
+
 }
